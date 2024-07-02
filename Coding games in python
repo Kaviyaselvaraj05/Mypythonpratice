@@ -1,0 +1,125 @@
+01)You are given a string s consisting of only lowercase letters and spaces. You are then given another string krap also consisting of only lowercase letters and spaces. You are to remove all instances of krap from s, then print s
+
+Input
+Line 1: A string - s
+Line 2: A string - krap
+
+Output
+Line 1: s after all instances of krap are removed from it
+Constraints
+0 < length s < 200
+0 < length krap < 50
+0 <= Instances of krap in s < 200
+
+Example
+Input
+qyrjkrapbnxhfuyjnkrapnfhrjgkkrapdjgkrapjntjgnd
+krap
+Output
+
+solution:
+
+s = input()
+krap = input()
+r=s.replace(krap,"")
+print(r)
+
+02)The game mode is REVERSE: You do not have access to the statement. You have to guess what to do by observing the following set of tests:
+01 Test 1
+Input
+Expected output
+6
+                   _..
+  /}_{\           /.-'
+ ( o o )-.___...-'/
+ ==._.==         ;
+      \ i _..._ /,
+      {_;/   {_//
+                   _..
+  /}_{\           /.-'
+ ( x x )-.___...-'/
+ ==._.==         ;
+      \ i _..._ /,
+      {_;/   {_//
+02 Test 2
+Input
+Expected output
+12
+             (`,---.')  (\
+              (o,_,o)    ))
+             -=>_Y_<=- _,;'
+               /`"'\.-'.'
+             .'     `<'
+             | ;   ; |
+             |`,   , |
+              \ ;`; /
+               ||,||
+              /|| ||\
+             (,|( )|,)
+              (,,Y,,)
+             (`,---.')  (\
+              (x,_,x)    ))
+             -=>_Y_<=- _,;'
+               /`"'\.-'.'
+             .'     `<'
+             | ;   ; |
+             |`,   , |
+              \ ;`; /
+               ||,||
+              /|| ||\
+             (,|( )|,)
+              (,,Y,,)
+03 Test 3
+Input
+Expected output
+7
+      /\_/\
+ /\  / o o \
+//\\ \~(*)~/
+`  \/   ^ /
+   | \|| ||
+   \ '|| ||
+    \)()-())
+      /\_/\
+ /\  / x x \
+//\\ \~(*)~/
+`  \/   ^ /
+   | \|| ||
+   \ '|| ||
+    \)()-())
+04 Test 4
+Input
+Expected output
+7
+    /\_____/\
+   /  o   o  \
+
+solution:
+n = int(input())
+for i in range(n):
+    row = input()
+    v=row.replace("o","x")
+    print(v)
+
+03)Your program must output the number of letters inside a message. A letter is a un character in [a-z] or [A-Z].
+
+INPUT:
+Line 1: A string message.
+
+OUTPUT:
+Line 1: The number of letters inside the message.
+
+EXAMPLE:
+Input
+I am
+Output
+3
+
+solution:
+a="qwertyuioplkjhgfdsazxcvbnmQWERTYUIOPLKJHGFDSAZXCVBNM"
+c=0
+m = input()
+for i in m:
+    if i in a:
+        c+=1
+print(c)
